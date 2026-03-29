@@ -2,16 +2,18 @@
 import './App.css'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
+import Rating from './Components/Rating'
 
 function App() {
 
 
   return (
     <>
-    <div className='container mx-auto'>
+    
       <Navbar></Navbar>
       <Hero></Hero>
-    </div>
+      <Rating></Rating>
+    
      
     </>
   )

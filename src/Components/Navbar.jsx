@@ -41,7 +41,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center py-5">
+    <div className=" container mx-auto flex justify-between items-center py-5">
       <div>
         <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text
         text-transparent">

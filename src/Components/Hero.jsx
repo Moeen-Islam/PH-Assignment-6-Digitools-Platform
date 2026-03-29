@@ -4,7 +4,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center px-10 my-21.25 gap-16.5 space-y-4">
+    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-10 my-21.25 gap-16.5 space-y-4">
       <div className="left">
         <div className="inline-flex items-center gap-2 bg-[#E1E7FF] px-4 py-2 rounded-full">
           {/* Circle icon */}
