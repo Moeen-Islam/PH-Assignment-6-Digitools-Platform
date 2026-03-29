@@ -43,7 +43,8 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center py-5">
       <div>
-        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text
+        text-transparent">
           DigiTools
         </h1>
       </div>
@@ -83,7 +84,8 @@ const Navbar = () => {
         <button className="text-[15px] font-medium cursor-pointer">
           Login
         </button>
-        <button className="btn border-none bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white text-[15px] font-semibold px-6 min-h-0 h-11">
+        <button className="btn border-none bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full
+        text-white text-[15px] font-semibold px-6 min-h-0 h-11">
           Get Started
         </button>
       </div>

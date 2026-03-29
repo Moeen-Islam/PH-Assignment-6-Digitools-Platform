@@ -1,5 +1,6 @@
 
 import './App.css'
+import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <div className='container mx-auto'>
       <Navbar></Navbar>
+      <Hero></Hero>
     </div>
      
     </>
