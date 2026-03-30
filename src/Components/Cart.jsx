@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 
 const Cart = ({ selectedProducts, setSelectedProducts }) => {
@@ -12,6 +13,9 @@ const Cart = ({ selectedProducts, setSelectedProducts }) => {
   const handleRemove = (id) => {
     const updatedCart = selectedProducts.filter((item) => item.id !== id);
     setSelectedProducts(updatedCart);
+    toast.warning("🗑️ Item removed from cart!", {
+    position: "top-right",
+  });
   };
 
   const handleCheckout = () => {
@@ -27,9 +31,10 @@ const Cart = ({ selectedProducts, setSelectedProducts }) => {
     <div className="w-full rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
       
       {selectedProducts.length === 0 ? (
-        <div className="flex min-h-45 items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-gray-50 text-center">
+        <div className="flex min-h-45 items-center flex-col justify-center rounded-2xl bg-gray-50 text-center">
+          <PiShoppingCartSimpleLight size={48} className="text-gray-300 mb-4"/>
           <p className="text-gray-500 text-sm sm:text-base">
-            Your cart is empty. Add some products to continue.
+            Your cart is empty
           </p>
         </div>
       ) : (
