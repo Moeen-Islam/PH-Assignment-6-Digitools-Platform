@@ -1,4 +1,5 @@
 
+import { Suspense } from 'react'
 import './App.css'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
@@ -7,9 +8,16 @@ import Pricing from './Components/Pricing'
 import Rating from './Components/Rating'
 import Steps from './Components/Steps'
 import Transfrom from './Components/Transfrom'
+import DigitalTools from './Components/DigitalTools'
+
+
+const fetchproduct = async() => {
+  const res = await fetch("/data.json")
+  return res.json();
+}
 
 function App() {
-
+const productPromise = fetchproduct()
 
   return (
     <>
@@ -17,6 +25,10 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Rating></Rating>
+
+      <Suspense fallback= {<span className="loading loading-spinner loading-xl"></span>}>
+          <DigitalTools productPromise={productPromise}></DigitalTools>
+      </Suspense>
     
       <Steps></Steps>
       <Pricing></Pricing>
