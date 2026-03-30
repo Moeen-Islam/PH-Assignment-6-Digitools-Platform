@@ -9,6 +9,8 @@ import Rating from './Components/Rating'
 import Steps from './Components/Steps'
 import Transfrom from './Components/Transfrom'
 import DigitalTools from './Components/DigitalTools'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const fetchproduct = async() => {
@@ -35,6 +37,7 @@ const productPromise = fetchproduct()
       <Transfrom></Transfrom>
       <Footer></Footer>
      
+     <ToastContainer position="top-right" autoClose={2000} />
     </>
   )
 }

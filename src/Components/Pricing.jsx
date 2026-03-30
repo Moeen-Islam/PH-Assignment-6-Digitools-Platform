@@ -15,9 +15,9 @@ const Pricing = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch ">
           {/* Starter */}
-          <div className="bg-white border border-gray-200 mx-5 md:mx-0 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+          <div className="bg-white border border-gray-200 mx-5 md:mx-0 rounded-2xl p-8 flex flex-col justify-between shadow-sm relative transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
             <div>
               <h3 className="text-[32px] font-bold text-[#0F172A]">Starter</h3>
               <p className="text-[#64748B] mt-2">Perfect for getting started</p>
@@ -55,7 +55,7 @@ const Pricing = () => {
           </div>
 
           {/* Pro */}
-          <div className="relative rounded-2xl mx-5 md:mx-0 p-[1px] bg-gradient-to-r from-[#4F39F6] to-[#C026D3] shadow-lg">
+          <div className="relative rounded-2xl mx-5 md:mx-0 p-px bg-gradient-to-r from-[#4F39F6] to-[#C026D3] shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
             <div className="relative h-full rounded-2xl bg-gradient-to-br from-[#5B35F5] via-[#7A22F2] to-[#B010F5] p-8 flex flex-col justify-between">
               {/* Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -110,7 +110,7 @@ const Pricing = () => {
           </div>
 
           {/* Enterprise */}
-          <div className="bg-white border border-gray-200 mx-5 md:mx-0 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+          <div className="bg-white border border-gray-200 mx-5 md:mx-0 rounded-2xl p-8 flex flex-col justify-between shadow-sm relative transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
             <div>
               <h3 className="text-[32px] font-bold text-[#0F172A]">Enterprise</h3>
               <p className="text-[#64748B] mt-2">For teams and businesses</p>
