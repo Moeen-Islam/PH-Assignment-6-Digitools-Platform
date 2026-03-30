@@ -7,7 +7,7 @@ const Steps = () => {
   return (
     <div className="container mx-auto my-30">
       <div className="header text-center">
-        <h1 className="font-extrabold text-[48px] text-[#101727] mb-4">
+        <h1 className="font-extrabold text-[40px] md:text-[48px] text-[#101727] mb-4 ">
           Get Started in 3 Steps
         </h1>
         <p className="mb-10 text-[#627382]">
@@ -16,7 +16,7 @@ const Steps = () => {
       </div>
 
       <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-6 max-w-300 mx-auto">
-        <div className="cards-item relative bg-white p-8 rounded-[20px] border border-gray-200">
+        <div className="cards-item relative mx-10 md:mx-0 bg-white p-8 rounded-[20px] border border-gray-200">
           {/* circle 01 */}
           <div className="absolute top-3 right-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-10 h-10 rounded-full flex items-center justify-center">
             <p className="text-white font-bold text-[14px]">01</p>
@@ -42,7 +42,7 @@ const Steps = () => {
           </div>
         </div>
 
-        <div className="cards-item relative bg-white p-8 rounded-[20px] border border-gray-200">
+        <div className="cards-item relative mx-10 md:mx-0 bg-white p-8 rounded-[20px] border border-gray-200">
           {/* circle 02 */}
           <div className="absolute top-3 right-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-10 h-10 rounded-full flex items-center justify-center">
             <p className="text-white font-bold text-[14px]">02</p>
@@ -67,7 +67,7 @@ const Steps = () => {
           </div>
         </div>
 
-        <div className="cards-item relative bg-white p-8 rounded-[20px] border border-gray-200">
+        <div className="cards-item relative mx-10 md:mx-0 bg-white p-8 rounded-[20px] border border-gray-200">
           {/* circle 03 */}
           <div className="absolute top-3 right-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-10 h-10 rounded-full flex items-center justify-center">
             <p className="text-white font-bold text-[14px]">03</p>
