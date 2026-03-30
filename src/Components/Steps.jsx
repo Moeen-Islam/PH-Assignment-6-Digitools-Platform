@@ -15,7 +15,7 @@ const Steps = () => {
         </p>
       </div>
 
-      <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-300 mx-auto">
+      <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-6 max-w-300 mx-auto">
         <div className="cards-item relative bg-white p-8 rounded-[20px] border border-gray-200">
           {/* circle 01 */}
           <div className="absolute top-3 right-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-10 h-10 rounded-full flex items-center justify-center">
