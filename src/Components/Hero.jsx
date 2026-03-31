@@ -57,7 +57,7 @@ const Hero = () => {
     <img
       src={Banner}
       alt="Banner"
-      className="w-full max-w-[260px] sm:max-w-[360px] md:max-w-[440px] lg:max-w-[520px] h-auto rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.15)]"
+      className="w-full max-w-65 sm:max-w-90 md:max-w-110 lg:max-w-130 h-auto rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.15)]"
     />
   </div>
 </div>
