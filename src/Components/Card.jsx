@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { toast } from "react-toastify";
 
 const tagStyles = {
@@ -16,27 +15,28 @@ const Card = ({
 }) => {
   const isActive = activeId === digitalTool.id;
 
-  const handleClick = () => {
+  const handleAddToCart = (product) => {
+    const exists = selectedProducts.some((item) => item.id === product.id);
+
+    if (exists) {
+      toast.warning("⚠️ Already added to cart!");
+      return;
+    }
+
+    setSelectedProducts((prev) => [...prev, product]);
+    toast.success("✅ Added to cart!");
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
     setActiveId(digitalTool.id);
-    // setSelectedProducts([...selectedProducts,digitalTool])
     handleAddToCart(digitalTool);
   };
 
-  const handleAddToCart = (product) => {
-  const exists = selectedProducts.some((item) => item.id === product.id);
-
-  if (exists) {
-    toast.warning("⚠️ Already added to cart!");
-    return;
-  }
-
-  setSelectedProducts((prev) => [...prev, product]);
-  toast.success("✅ Added to cart!");
-};
-
   return (
     <div className="w-full h-full flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm relative transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
-      {/* Tag */}
       {digitalTool.tag && (
         <span
           className={`absolute top-4 right-4 rounded-full px-3 py-1 text-xs font-medium capitalize ${
@@ -48,7 +48,6 @@ const Card = ({
         </span>
       )}
 
-      {/* Icon */}
       <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#F9F5FF]">
         {digitalTool.icon && (
           <img
@@ -59,17 +58,14 @@ const Card = ({
         )}
       </div>
 
-      {/* Title */}
       <h2 className="text-[22px] font-bold text-gray-900 leading-tight">
         {digitalTool.name}
       </h2>
 
-      {/* Description (FIXED HEIGHT) */}
       <p className="mt-3 text-md text-gray-500 leading-6 min-h-15">
         {digitalTool.description}
       </p>
 
-      {/* Price */}
       <div className="mt-4 flex items-end gap-1">
         <h3 className="text-3xl font-bold text-gray-900">
           ${digitalTool.price}
@@ -77,7 +73,6 @@ const Card = ({
         <span className="text-sm text-gray-500">/{digitalTool.period}</span>
       </div>
 
-      {/* Features */}
       <ul className="mt-5 space-y-3 flex-1">
         {digitalTool.features.map((feature, index) => (
           <li
@@ -90,13 +85,13 @@ const Card = ({
         ))}
       </ul>
 
-      {/* Button */}
       <button
+        type="button"
         onClick={handleClick}
-        className={`mt-6 w-full rounded-full py-3 text-sm font-medium text-white transition ${
+        className={`mt-6 w-full h-11 px-6 rounded-full text-white text-[15px] font-semibold transition-all duration-300 ${
           isActive
             ? "bg-green-500"
-            : "bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:opacity-90"
+            : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90"
         }`}
       >
         {isActive ? "✔ Added to Cart!" : "Buy Now"}

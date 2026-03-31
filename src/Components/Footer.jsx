@@ -116,13 +116,13 @@ const Footer = () => {
             </h3>
 
             <div className="flex items-center gap-3 sm:gap-4">
-              <a className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
+              <a className="w-10 h-10 cursor-pointer sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
                 <FaInstagram />
               </a>
-              <a className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
+              <a className="w-10 h-10 cursor-pointer sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
                 <FaFacebookF />
               </a>
-              <a className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
+              <a className="w-10 h-10 cursor-pointer sm:w-11 sm:h-11 rounded-full bg-white text-[#06142B] flex items-center justify-center">
                 <FaXTwitter />
               </a>
             </div>
