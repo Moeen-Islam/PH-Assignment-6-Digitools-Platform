@@ -24,7 +24,7 @@ const Hero = () => {
     <h1 className="mt-4 text-[40px] sm:text-[52px] md:text-[60px] lg:text-[72px] leading-tight font-extrabold">
       Supercharge Your
       <br className="hidden sm:block" />
-      <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Digital Workflow</span>
+      <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"> Digital Workflow</span>
     </h1>
 
     <p className="mt-4 text-[15px] sm:text-[17px] lg:text-[18px] text-[#627382] leading-7 max-w-[650px] mx-auto lg:mx-0">
