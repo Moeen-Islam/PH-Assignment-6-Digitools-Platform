@@ -2,7 +2,7 @@ import React from "react";
 
 const Rating = () => {
   return (
-    <div className="max-w-400 mx-auto bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+    <div className="max-w-600 mx-auto bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
       <div className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 py-10 sm:py-12 md:py-14">
           {/* item 1 */}
